@@ -29,7 +29,7 @@ function hg_prompt_info() {
 # Current PWD
 
 function get_pwd() {
-  print -D "$fg[white]$PWD$reset_color"
+  print -D "$fg[white]`basename $PWD`$reset_color"
 }
 
 #Error msg
@@ -86,7 +86,7 @@ function put_spacing() {
 }
 
 function precmd() {
-print -rP '$fg[blue]%m: $(get_pwd)$(put_spacing)$(git_prompt_info)$(hg_prompt_info) $(battery_charge)'
+print -rP '$fg[blue]%m: $(get_pwd)$(put_spacing)$(git_prompt_info)$(hg_prompt_info)'
 }
 
 PROMPT='%{$fg[magenta]%}$(error_status) >%{$reset_color%}'
