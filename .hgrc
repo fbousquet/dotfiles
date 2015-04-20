@@ -1,9 +1,24 @@
 [ui]
-username = Fabien BOUSQUET <fabien.bousquet@business-cloud.fr>
+username = Fabien Bousquet <mail@fabien-bousquet.com>
 verbose = True
 
 [extensions]
+color=
+rebase=
+purge=
+record=
+strip=
+pager=
 hgext.extdiff =
+histedit=
+
+[pager]
+pager= LESS="FRX" less
+attend = d, diff, xdiff, log, help, status
+
+[diff]
+git=1
+nodates=1
 
 [extdiff]
 cmd.diff = /usr/local/bin/ksdiff
@@ -20,3 +35,4 @@ Kaleidoscope.args = --merge --output $output --base $base -- $local $other
 [alias]
 dpr = diff -r $1 .
 dprs = diff -r . .
+log=log -G
