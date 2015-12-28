@@ -17,7 +17,7 @@ alias voyages='cd /Users/Irenicus/Projects/Clients/Voyages-SNCF'
 
 # NAS
 
-alias nas='ssh root@irenicus.fr'
+alias nas='ssh root@irenicus.fr -p 25'
 
 # Go PATH
 export GOPATH=/Users/Irenicus/Dev/go_path
