@@ -36,9 +36,9 @@ function get_pwd() {
 
 function error_status {
   if [ $? -eq 0 ]; then
-    echo "☺"
+    echo "😉"
   else
-    echo "☹"
+    echo "🙀"
   fi
 }
 
@@ -89,7 +89,7 @@ function precmd() {
 print -rP '$fg[blue]%m: $(get_pwd)$(put_spacing)$(git_prompt_info)$(hg_prompt_info)'
 }
 
-PROMPT='%{$fg[magenta]%}$(error_status) >%{$reset_color%}'
+PROMPT='%{$fg[magenta]%}$(error_status)  ->%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="[git:"
 ZSH_THEME_GIT_PROMPT_SUFFIX="]$reset_color"
