@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="prose"
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -66,6 +66,9 @@ source '/Users/Irenicus/Dev/google-cloud-sdk/completion.zsh.inc'
 alias docker-connect='ssh -t irenicus@docker-machine "cd ~/docker && exec \$SHELL"'
 # alias dockerclean="docker rmi $(docker images -a | grep '^<none>' | awk '{print $3}')"
 # alias dockereval="eval $(docker-machine env default)"
+
+# Itermocil autocomplete
+complete -W "$(itermocil --list)" itermocil
 
 # nvm
 
