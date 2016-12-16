@@ -21,6 +21,7 @@ alias club='cd /Users/Irenicus/Dev/Clients/club_med'
 alias b2c='cd /Users/Irenicus/Dev/Clients/club_med/cm-b2c'
 alias graphql='cd /Users/Irenicus/Dev/Clients/club_med/cm-graphql'
 alias cms='cd /Users/Irenicus/Dev/Clients/club_med/cm-b2c-cms-config'
+alias update_heroku='heroku config:set cms.content=b3c-pr-3091 -a cm-b2c-pr-3097'
 
 # NPM
 alias i="npm i"
@@ -40,7 +41,7 @@ alias git-purge="git fetch --all -p; git branch -vv | grep \": gone]\" | awk '{ 
 
 # Editor
 
-export EDITOR=/usr/local/bin/atom
+export EDITOR=vim
 
 # Go PATH
 export GOPATH=/Users/Irenicus/Dev/go_path
