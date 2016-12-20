@@ -1,0 +1,9 @@
+windows:
+  - name: clubmed
+    root: ~/Dev/Clients/clubmed-front
+    layout: main-vertical-flipped
+    panes:
+      - commands:
+        - cd cm-b2c
+        - npm run start-sandbox
+      - cd cm-b2c

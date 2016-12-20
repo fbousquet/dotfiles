@@ -1,7 +1,6 @@
-*
+.oh-my-zsh/
 !.gitignore
 !.bashrc
 !.zshrc
 !.hgrc
-!.oh-my-zsh/*
 !.profile

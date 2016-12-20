@@ -3,24 +3,14 @@
 alias goapp='cd ~/Dev/google-cloud-sdk/platform/google_appengine/goapp'
 
 alias dev_path='cd ~/Dev'
-alias bc='cd ~/Projects/business-cloud'
-alias extranet_angular='/Users/Irenicus/Projects/business-cloud/extranet_angular'
-alias extranet_core='/Users/Irenicus/Projects/business-cloud/extranet_core'
-alias run_extranet='goapp serve dispatch.yaml backend/extranet/app.yaml backend/apps/drivetaker/app.yaml frontend/app.yaml'
 
-# sublime text
-alias subl_dir='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
-
-alias projects='cd ~/Projects'
 
 #Clients
 
-alias voyages='cd /Users/Irenicus/Projects/Clients/Voyages-SNCF'
-
-alias club='cd /Users/Irenicus/Dev/Clients/club_med'
-alias b2c='cd /Users/Irenicus/Dev/Clients/club_med/cm-b2c'
-alias graphql='cd /Users/Irenicus/Dev/Clients/club_med/cm-graphql'
-alias cms='cd /Users/Irenicus/Dev/Clients/club_med/cm-b2c-cms-config'
+alias club='cd /Users/Irenicus/Dev/Clients/clubmed-front'
+alias b2c='cd /Users/Irenicus/Dev/Clients/clubmed-front/cm-b2c'
+alias graphql='cd /Users/Irenicus/Dev/Clients/clubmed-front/cm-graphql'
+alias cms='cd /Users/Irenicus/Dev/Clients/clubmed-front/cm-b2c-cms-config'
 alias update_heroku='heroku config:set cms.content=b3c-pr-3091 -a cm-b2c-pr-3097'
 
 # NPM
@@ -28,6 +18,7 @@ alias i="npm i"
 alias w="npm run watch"
 alias t="npm run test"
 alias l="npm run lint"
+alias update_cms="npm i -f ../cm-b2c-cms-config"
 export NPM_TOKEN="1db15f33-214c-4e59-9ea8-ed7ed0a5ca2e"
 
 
@@ -77,8 +68,18 @@ alias run_migration_integ='npm run run-migration -- \
 --redirectUri "https://cms.integ.clubmed.com/app/" \
 --oauthHost "auth.integ.clubmed.com" \
 --clientId "da3ae41a-bec8-4bf8-940d-aaa1e6e61f0e" \
---backup "/Users/Irenicus/backup"'
+--backup "/Users/Irenicus/Desktop/backup"'
 
+alias run_migration_integ_validate='npm run run-migration -- \
+--user "admin" \
+--password "toto" --contentId "b2c" \
+--apiUrl "https://cms.integ.clubmed.com/v1/" \
+--cmsHost "cms.integ.clubmed.com" \
+--redirectUri "https://cms.integ.clubmed.com/app/" \
+--oauthHost "auth.integ.clubmed.com" \
+--clientId "da3ae41a-bec8-4bf8-940d-aaa1e6e61f0e" \
+--backup "/Users/Irenicus/Desktop/backup" \
+--validate'
 
 export API_CONFIG_PATH="/Users/Irenicus/Dev/Clients/club_med/api/digital-api/configuration_developper.json"
 

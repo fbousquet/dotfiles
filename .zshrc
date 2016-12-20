@@ -52,23 +52,13 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# ZSH config for App engine :
-##################################################################
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/Irenicus/Dev/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables zsh completion for gcloud.
-source '/Users/Irenicus/Dev/google-cloud-sdk/completion.zsh.inc'
-
-
 # Docker
 alias docker-connect='ssh -t irenicus@docker-machine "cd ~/docker && exec \$SHELL"'
 # alias dockerclean="docker rmi $(docker images -a | grep '^<none>' | awk '{print $3}')"
 # alias dockereval="eval $(docker-machine env default)"
 
 # Itermocil autocomplete
-complete -W "$(itermocil --list)" itermocil
+compctl -g '~/.itermocil/*(:t:r)' itermocil
 
 # nvm
 
