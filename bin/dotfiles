@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if ! which rcup >/dev/null; then
+  echo "Fatal: rcm is not installed on this machine."
+  exit 1
+fi
+
+os_type=$(uname -s)
+
+# Remove oh-my-zsh
+rm -rf ~/.oh-my-zsh
+
+# Clone dotfiles repo
+if [[ -d ~/.dotfiles ]]; then
+  cd ~/.dotfiles
+  git pull
+else
+  git clone git@github.com:fbousquet/dotfiles.git ~/.dotfiles
+fi
+
+rcup -f -t $os_type -d ~/.dotfiles
+reset
