@@ -7,9 +7,6 @@ fi
 
 os_type=$(uname -s)
 
-# Remove oh-my-zsh
-rm -rf ~/.oh-my-zsh
-
 # Clone dotfiles repo
 if [[ -d ~/.dotfiles ]]; then
   cd ~/.dotfiles
