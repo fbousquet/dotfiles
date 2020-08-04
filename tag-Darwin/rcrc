@@ -1,4 +1,5 @@
 EXCLUDES="README*"
+SYMLINK_DIRS="gnupg"
 TAGS="Darwin"
 DOTFILES_DIRS="/Users/Irenicus/.dotfiles"
 
