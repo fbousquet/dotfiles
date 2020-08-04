@@ -1,0 +1,23 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[user]
+	name = Fabien Bousquet
+	email = fabien@wecraft.io
+[diff]
+	tool = kaleidoscope
+[difftool]
+	prompt = false
+[difftool "kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = kaleidoscope
+[mergetool]
+	prompt = false
+[mergetool "kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true

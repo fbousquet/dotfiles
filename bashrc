@@ -11,9 +11,11 @@ load_all_files_in() {
 # Cross-shell aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-load_all_files_in before
-load_all_files_in ""
-load_all_files_in after
+load_all_files_in
+
+# Load default profile
+
+[[ -f ~/.profile ]] && source ~/.profile
 
 # Local config
 [[ -f ~/.bashrc.local ]] && source ~/.bashrc.local

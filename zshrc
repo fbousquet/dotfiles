@@ -12,10 +12,7 @@ load_all_files_in() {
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 
-load_all_files_in before
-load_all_files_in ""
-load_all_files_in after
-
+load_all_files_in
 
 # Search history with cursor up/down
 bindkey '^[[A' up-line-or-search
