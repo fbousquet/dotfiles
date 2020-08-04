@@ -1,0 +1,8 @@
+EXCLUDES="README*"
+TAGS="Darwin"
+DOTFILES_DIRS="/Users/Irenicus/.dotfiles"
+
+#Quicklook alias
+
+export PATH="$PATH:$DOTFILES_DIRS/.scripts"
+export DEFAULT_USER="Irenicus"
