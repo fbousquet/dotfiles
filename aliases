@@ -13,3 +13,7 @@ alias git-purge="git fetch --all -p; git branch -vv | grep \": gone]\" | awk '{ 
 # Remove all images which has no name
 
 alias rmi="docker images -q | xargs docker rmi"
+
+# dotfiles sync
+
+alias sync_dots="rcup -v"
