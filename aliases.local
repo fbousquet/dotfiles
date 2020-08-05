@@ -1,5 +1,5 @@
 # Customers
 alias dev="cd $HOME/Dev"
-alias caliopea="cd $HOME/Dev/Clients/aleph_pro"
+alias caliopea="cd $HOME/Dev/Clients/caliopea-hooks"
 alias aleph="cd $HOME/Dev/Clients/aleph_pro"
 alias dotfiles="cd $HOME/.dotfiles"
