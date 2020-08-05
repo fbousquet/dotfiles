@@ -17,3 +17,7 @@ alias rmi="docker images -q | xargs docker rmi"
 # dotfiles sync
 
 alias sync_dots="rcup -v"
+
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
