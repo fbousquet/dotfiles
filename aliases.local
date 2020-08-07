@@ -3,3 +3,6 @@ alias dev="cd $HOME/Dev"
 alias caliopea="cd $HOME/Dev/Clients/caliopea-hooks"
 alias aleph="cd $HOME/Dev/Clients/aleph_pro"
 alias dotfiles="cd $HOME/.dotfiles"
+
+alias aleph_ssh="ssh alojmjk@ftpcloud.cluster024.hosting.ovh.net -p 45766"
+alias wecraft_ssh="ssh kyqvvsi@ftpcloud.cluster024.hosting.ovh.net -p 45766"
